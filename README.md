@@ -19,7 +19,8 @@ Lines 538-735: these lines build and export all the plots reported in the paper 
 
 Lines 740-790: we calculate the deviance and the fitted values for each model. 
 
-%% COMMUNITY DETECTION ANALYSIS
+%% PLOTS AND COMMUNITY DETECTION ANALYSIS
+
 %BiasCountrySectorReal
 This script calculates three types of bias (country, sector, country-sector)
 in both weighted and binary network connections over time. Bias is measured
@@ -27,6 +28,7 @@ as percentage of within-group connections relative to total connections.
 Input required: AdjMatrixTime.mat containing adjacency matrices (Adj) and 
 timestamps (Tempi), plus partition vectors for countries and sectors.
 Output: BiasReal.mat containing bias calculations over time.
+
 %BiasCountrySectorFitted
 This script analyzes network bias in gravity model outputs across three dimensions:
 country, sector, and country-sector combinations. For each dimension, both weighted
@@ -49,6 +51,7 @@ Input required:
 Output:
 - ConfiniReal.mat: Contains analyzed trade patterns by distance quartiles
   and border regions
+  
 %DistanceAnalysisFitted
 This script analyzes trade/interaction patterns based on geographical distance
 and country borders using fitted values from a gravity model. It processes 
@@ -61,6 +64,7 @@ Input required:
 Output:
 - ConfiniFitted.mat: Contains analyzed interaction patterns by distance
   quartiles and border regions
+  
 %PlotBias
 This script creates visualizations comparing real and fitted network characteristics,
 including bias analysis, border effects, and distance-based weight distributions.
@@ -72,6 +76,7 @@ Input required:
 Outputs:
 - Figure 1: Bias comparison and border region analysis
 - Figure 2: Distance-based weight distribution analysis
+  
 %GeoNetPlot
 This script visualizes the European Union Emissions Trading System (EU ETS) network
 using geographical data and adjacency matrices.
@@ -83,6 +88,7 @@ Output:
     * Nodes: Regions sized by their connection strength
     * Edges: Connections between regions
     * Colors: Based on outgoing connection strength (logarithmic scale)
+      
 %PlotDeviance
 This MATLAB script analyzes and visualizes deviance data for different gravity models
 of carbon emission trading. It compares various model configurations and
@@ -95,6 +101,7 @@ Output:
   1. Deviance plots for different model configurations
   2. Log of deviance difference with confidence intervals
 - Console output of difference in deviances and confidence intervals
+  
 %CommunityOT
 This script performs a network analysis over time using Optimal Transport
 (OT) methods and classical modularity approaches. It computes modularity
@@ -107,6 +114,7 @@ Inputs:
 Outputs:
 - Plots and figures representing modularity and partition metrics over time.
 - Saved figures in 'PlotFig/' directory.
+  
 %CommunityOT_AggregateNet
 This script analyzes transportation and cultural distance data across
 different regions over time. It uses optimal transport methods to assess
